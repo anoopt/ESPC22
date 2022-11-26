@@ -1,0 +1,1 @@
+export const openWeatherMapApiKey: string = "YOUR_API_KEY";

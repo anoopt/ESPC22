@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "demo-1",
+    "libraryId": "d1847fbd-e1df-42ef-9c66-3b5d36f0c5b4",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "demo1",
+    "solutionShortDescription": "demo1 description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "adaptiveCardExtension",
+    "aceTemplateType": "PrimaryText"
+  }
+}

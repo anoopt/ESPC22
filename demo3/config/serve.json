@@ -1,0 +1,7 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 443,
+  "hostname": "7123-82-40-151-28.ngrok.io",
+  "https": true,
+  "initialPage": "https://enter-your-SharePoint-site/_layouts/workbench.aspx"
+}
