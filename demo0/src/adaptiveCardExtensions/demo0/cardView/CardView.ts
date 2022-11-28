@@ -13,7 +13,7 @@ export class CardView extends BaseBasicCardView<IDemo0AdaptiveCardExtensionProps
   public get cardButtons(): [ICardButton] | [ICardButton, ICardButton] | undefined {
     return [
       {
-        title: strings.QuickViewButton,
+        title: "See more",
         action: {
           type: 'QuickView',
           parameters: {
@@ -25,13 +25,13 @@ export class CardView extends BaseBasicCardView<IDemo0AdaptiveCardExtensionProps
   }
 
   //* This shows the data to be displayed in the card
-  //* We do not have control over the view - it is defined by Microsoft
+  //* We do not have control over the view (UI) - it is defined by Microsoft
   //* We can only control the data
   //* The data (model) and the view (adaptive card) get merged together to show what is displayed in the card
   public get data(): IBasicCardParameters {
     return {
-      primaryText: strings.PrimaryText,
-      title: this.properties.title
+      primaryText: "Welcome to session on ACEs",
+      title: "ESPC"
     };
   }
 

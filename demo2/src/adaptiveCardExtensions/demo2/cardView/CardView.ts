@@ -26,7 +26,7 @@ export class CardView extends BasePrimaryTextCardView<IDemo2AdaptiveCardExtensio
   public get data(): IPrimaryTextCardParameters {
     return {
       primaryText: `${this.state.temperature}°C`,
-      description: "The current temperature in London",
+      description: "The current temperature in Copenhagen",
       title: "Weather"
     };
   }

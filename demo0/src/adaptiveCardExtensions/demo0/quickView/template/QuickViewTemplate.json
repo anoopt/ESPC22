@@ -6,7 +6,7 @@
     {
       "type": "TextBlock",
       "weight": "Bolder",
-      "text": "${title}"
+      "text": "${heading}"
     },
     {
       "type": "ColumnSet",
@@ -17,7 +17,7 @@
             {
               "type": "TextBlock",
               "weight": "Bolder",
-              "text": "${subTitle}",
+              "text": "${subHeading}",
               "wrap": true
             }
           ]

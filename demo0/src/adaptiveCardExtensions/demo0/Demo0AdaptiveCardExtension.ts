@@ -28,13 +28,15 @@ export default class Demo0AdaptiveCardExtension extends BaseAdaptiveCardExtensio
   public onInit(): Promise<void> {
 
     //* Initialize the state - React like
+    //* Next demo - we will see how to use the state
     this.state = { };
 
     //* cardNavigator and quickViewNavigator - index of all the views that exist in the ACE
-    //* All card views are registered here
+    //* All card views are registered here (multiple card views can be registered based)
     //* () => new CardView() factory function
     //* Upon registration, the factory function is invoked
     //* This will be done only once and will not be invoked every time the card is rendered
+    //* The data in the card can be maintained by the state and can be updated by the state
     this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, () => new CardView());
 
     // this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, () => new QuickView());
@@ -64,6 +66,8 @@ export default class Demo0AdaptiveCardExtension extends BaseAdaptiveCardExtensio
   }
 
   //* Tells the ACE which card to render
+  //* In case of multiple card views - return the card view that needs to be rendered
+  //* Example - Card with image for some users and card with text for some other users
   protected renderCard(): string | undefined {
     return CARD_VIEW_REGISTRY_ID;
   }
